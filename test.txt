@@ -11,3 +11,9 @@ How to check if your local repo is up to date?
 1. use git fetch to get the change data from the remote (origin) repo.
 2. Use git diff -> git diff master origin/master (master refers to the 'master branch' here).
 2. Then use 'git pull' or 'git pull origin master' if needed.
+
+More about git status:
+1. If there are untracked files (deliberately so, use 'git status -uno' to show the status of the local repo without showing untracked file details.
+
+More about git commit:
+1. use 'git commit -a' to commit all files with changes to the local repo (without having to use gitt add).. 
