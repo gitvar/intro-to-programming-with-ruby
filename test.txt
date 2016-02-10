@@ -7,4 +7,6 @@ This is a tst text file. Working with git.
 
 That's it!  
 
-But how to check if your local repo is up to date? Because then you need to do a git pull operation,
+But how to check if your local repo is up to date? Because then you need to do a git pull operation.
+
+# Added online on the origin repo's master branch.
