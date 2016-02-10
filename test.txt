@@ -1,0 +1,10 @@
+This is a tst text file. Working with git.
+
+1: git add file_name
+2: git commit -m "Added content to the test.txt file to clarify the procedures to be used with git"
+# The changes have now been commited to the local repo.
+3. Push the local changes up to the remote (origin) repo: git push -u origin master
+
+That's it!  
+
+But how to check if your local repo is up to date? Because then you need to do a git pull operation,
