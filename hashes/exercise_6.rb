@@ -4,13 +4,14 @@ words =  ['demo', 'none', 'tied', 'evil', 'dome', 'mode', 'live',
           'fowl', 'veil', 'wolf', 'diet', 'vile', 'edit', 'tide',
           'flow', 'neon']
 
+
 def compare_words(str1, str2)
   arr1 = (str1.scan /\w/).sort
   arr2 = (str2.scan /\w/).sort
-  
+
   if arr1 == arr2
     return true
-  else 
+  else
     return false
   end
 end
@@ -27,11 +28,11 @@ while words.length > 0
         n += 1
         print "#{str1}: " if n == 1
         print "#{words[index]}, "
-        words[index] = nil 
+        words[index] = nil
       end
     end
   end
-  words.compact!  
+  words.compact!
   puts
   n = 0
 end
