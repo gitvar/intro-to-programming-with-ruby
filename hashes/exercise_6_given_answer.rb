@@ -7,15 +7,11 @@ words =  ['demo', 'none', 'tied', 'evil', 'dome', 'mode', 'live',
 result = {}
 
 words.each do |word|
-  puts "word: " + word
   key = word.split('').sort.join
-  puts "key: " + key
   if result.has_key?(key)
     result[key].push(word)
-    puts "if: result[key]: " + result[key].to_s
   else
     result[key] = [word]
-    puts "else: result[key]: " + result[key].to_s
   end
 end
 
