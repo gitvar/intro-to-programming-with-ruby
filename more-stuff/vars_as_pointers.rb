@@ -22,3 +22,21 @@ puts "a = #{a}"
 puts "b = #{b}"
 # At the end 'a' == 'b' as 'a' was added to, or the memory space it 'points' to was modified, but the address of that 
 # memory space was not changed! 'b' still 'points' to that address in memory as well.
+
+def test(b)
+  b.map {|letter| "I like the letter: #{letter}"}
+end
+
+a = ['a', 'b', 'c']
+puts test(a)
+puts a
+# a is unchanged as .map does not mutate the caller.
+
+def test(b)
+  b.map! {|letter| "I like the letter: #{letter}"}
+end
+
+a = ['a', 'b', 'c']
+puts test(a)
+puts a
+# a is changed as .map! "mutates teh caller" !
