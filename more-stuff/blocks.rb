@@ -1,4 +1,4 @@
-# blocks_n_procks.rb
+# blocks.rb
 
 def take_block(&block)
   puts "Before executing the block ..."
