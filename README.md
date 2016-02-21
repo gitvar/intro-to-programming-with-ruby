@@ -1,6 +1,8 @@
-# introduction to Programming with Ruby
+# The files found here are the answers to the exercise questions in 
+# the book "Introduction to Programming with Ruby" by Launch School.
 #
-# This directory = /Users/bennievandermerwe/intro-to-programming-with-ruby
+# The directories are named according to the book's chapter names.
 #
-# This directory contains exercise files found in the book.
-# This directory is under SCM via git and GitHub.  
+# This directory and all sub-directories are under SCM via git and GitHub.
+#
+# User: gitvar  
