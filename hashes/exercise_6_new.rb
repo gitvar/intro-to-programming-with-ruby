@@ -4,13 +4,13 @@
 words =  ['demo', 'none', 'tied', 'evil', 'dome', 'mode', 'live',
           'fowl', 'veil', 'wolf', 'Diet', 'vile', 'edit', 'tide',
           'flow', 'neon', 'kjhg', 'Diet']
-          
+
 anagrams = {}
 
 words.each do |word|
   key = word.downcase.split("").sort.join
   if anagrams.has_key?(key)
-    anagrams[key].push(word)
+    anagrams[key].push(word) # push the new anagram onto the array which is the 'value' for the hash.
   else
     anagrams[key] = [word] # Adds a new array as value! So, 'anagrams[key] = word' will not work!
   end
@@ -18,7 +18,6 @@ end
 
 anagrams.each do |k, v|
   puts " ---------------------------------- "
-  p v # Don't print the keys to the screen as that was not asked for, and the keys are actually just used behind the scenes 
-      # in order to build the anagram arrays remember!
-  #puts "#{k}: #{v.inspect}" # p implicitly calls inspect on the object to be printed. It also returns the object to be printed.
+  print "Key: #{k}, Value: " unless v.length <= 1
+  p v unless v.length <= 1 #  puts "#{k}: #{v.inspect}" # p implicitly calls inspect on the object to be printed. It also returns the object to be printed.
 end
